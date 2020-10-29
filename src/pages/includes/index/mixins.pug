@@ -1,0 +1,34 @@
+mixin icon(icon, name)
+  svg(class= icon): use(xlink:href="img/sprite.svg#" + name)
+
+mixin link(href, name, className)
+  a(href=href class=className)= name
+    if block
+      block
+
+mixin slider__intro-item(imgName, title, subtitle)
+  .swiper-slide(style= `background-image: url(img/intro/${imgName}); background-repeat: no-repeat; background-size: cover; background-position: center;`)
+    .container
+      .intro__inner
+        .intro__content
+          h2.intro__title= title
+          h3.intro__subtitle= subtitle
+          +link("#", "Подробнее", "link-btn")
+        .intro__controllers
+          button.intro__btn-prev: +icon("intro__icon", "intro-arrow")
+          button.intro__btn-next: +icon("intro__icon intro__icon--reverted", "intro-arrow")
+
+mixin features-item(title, icon)
+  .features__item
+    .features__content
+      .features__icon-wrapper: +icon("features__icon", icon)
+      h3.features__title= title
+
+mixin features(modif= none)
+  .features(class= modif)
+    .container
+      .features__inner
+        +features-item("Надежная защита", "feat-1")
+        +features-item("Безупречная репутация", "feat-2")
+        +features-item("Ориентированность на результат", "feat-3")
+        +features-item("Абсолютная конфиденциальность", "feat-4")

@@ -1,0 +1,33 @@
+header.header
+  .container
+    .header__inner
+      .header__top
+        .header__option
+          p.header__lang-txt Язык
+          .header__lang-list
+            a.header__lang-item(href="#") русский
+              +icon("header__lang-icon", "arrow-lang")
+        button.header__visual-btn: +icon("header__visual-icon", "eye")
+        .header__contacts
+          .header__contacts-item
+            a.header__contacts-tel(href="tel:+375447550101") +375 (44) 755-01-01
+            .header__contacts-icons
+              +icon("header__contacts-icon", "a1")
+              +icon("header__contacts-icon", "viber")
+              +icon("header__contacts-icon", "wapp")
+          .header__contacts-item
+            a.header__contacts-tel(href="tel:+375295500101") +375 (29) 550-01-01
+            .header__contacts-icons
+            +icon("header__contacts-icon", "mts")
+      .header__bottom
+        h1.header__logo-visuallyhidden МК Правовые технологии
+        +icon("header__logo", "logo")
+        nav.header__menu
+          ul.header__menu-list
+            li.header__menu-item: a.header__menu-link(href="#") Главная
+            li.header__menu-item: a.header__menu-link(href="#") О нас
+            li.header__menu-item: a.header__menu-link(href="#") Услуги
+            li.header__menu-item: a.header__menu-link(href="#") Тарифы
+            li.header__menu-item: a.header__menu-link(href="#") Инфоцентр
+            li.header__menu-item: a.header__menu-link(href="#") Контакты
+          button.header__search-btn: +icon("header__search-icon", "search")
