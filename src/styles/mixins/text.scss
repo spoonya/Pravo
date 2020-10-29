@@ -1,0 +1,10 @@
+@mixin text {
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.67;
+
+  width: 100%;
+
+  color: rgba($color-primary-dark, .8);
+}

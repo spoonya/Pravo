@@ -1,0 +1,16 @@
+@mixin slider-btn($icon-w, $icon-h, $opacity) {
+  width: $icon-w;
+  height: $icon-h;
+
+  transition: fill .1s linear;
+
+  fill: rgba($color-primary-dark, $opacity);
+
+  &:hover {
+    fill: darken($color-secondary-light, 20);
+  }
+
+  &--reverted {
+    transform: rotate(180deg);
+  }
+}

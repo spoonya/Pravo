@@ -6,7 +6,7 @@ mixin link(href, name, className)
     if block
       block
 
-mixin slider__intro-item(imgName, title, subtitle)
+mixin slide__intro-item(imgName, title, subtitle)
   .swiper-slide(style= `background-image: url(img/intro/${imgName}); background-repeat: no-repeat; background-size: cover; background-position: center;`)
     .container
       .intro__inner
@@ -15,8 +15,11 @@ mixin slider__intro-item(imgName, title, subtitle)
           h3.intro__subtitle= subtitle
           +link("#", "Подробнее", "link-btn")
         .intro__controllers
-          button.intro__btn-prev: +icon("intro__icon", "intro-arrow")
-          button.intro__btn-next: +icon("intro__icon intro__icon--reverted", "intro-arrow")
+          button.slider-btn-prev: +icon("intro__icon", "slider-arrow")
+          button.slider-btn-next: +icon("intro__icon intro__icon--reverted", "slider-arrow")
+
+mixin slide__activities-item(imgName)
+  .swiper-slide: img.activities__img(src=`img/activities/${imgName}`, alt="")
 
 mixin features-item(title, icon)
   .features__item
@@ -32,3 +35,19 @@ mixin features(modif= none)
         +features-item("Безупречная репутация", "feat-2")
         +features-item("Ориентированность на результат", "feat-3")
         +features-item("Абсолютная конфиденциальность", "feat-4")
+
+mixin activities-item(title, icon, href)
+  .activities__item
+    .activities__content
+      h3.activities__item-title= title
+      +link(href, "Подробнее", "link-txt")
+    .activities__icon-wrapper: +icon("activities__icon", icon)
+
+mixin slide__reviews-item(img, post, name, txt)
+  .reviews__item
+    img.reviews__img(src=`img/reviews/${img}`, alt="")
+    .reviews__content
+      p.reviews__post= post
+      p.reviews__name= name
+      p.reviews__txt= txt
+      +link("#", "Читать далее", "link-txt")

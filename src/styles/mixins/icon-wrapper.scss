@@ -1,0 +1,12 @@
+@mixin icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 2.5rem;
+
+  border: 3px solid $color-tertiary;
+  border-radius: 50%;
+}

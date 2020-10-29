@@ -17,6 +17,24 @@
   }
 }
 
+.link-txt {
+  font-family: $font-secondary;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  align-self: flex-start;
+
+  transition: color .1s linear;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+
+  color: rgba($color-primary-dark, .5);
+
+  &:hover {
+    color: darken($color-secondary-light, 8);
+  }
+}
+
 .features {
   &--about {
     position: absolute;
@@ -57,16 +75,7 @@
   }
 
   .features__icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 12rem;
-    height: 12rem;
-    margin-bottom: 2.5rem;
-
-    border: 3px solid rgba($color-primary-dark, .1);
-    border-radius: 50%;
+    @include icon-wrapper;
   }
 
   .features__icon {

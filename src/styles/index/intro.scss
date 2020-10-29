@@ -14,14 +14,14 @@
   margin-bottom: 11rem;
 
   .intro__title {
+    @include section-title;
+
     font-size: 4rem;
     line-height: 1.25;
 
     margin-bottom: 2rem;
 
     letter-spacing: .01em;
-
-    opacity: .9;
   }
 
   .intro__subtitle {
@@ -38,25 +38,11 @@
 .intro__controllers {
   padding-left: 2.5rem;
 
-  .intro__btn-prev {
+  .slider-btn-prev {
     margin-right: 5rem;
   }
 
   .intro__icon {
-    width: 10px;
-    height: 18px;
-
-    transition: fill .1s linear;
-
-    opacity: .8;
-
-    fill: $color-primary-dark;
-    &:hover {
-      fill: darken($color-secondary-light, 20);
-    }
-
-    &--reverted {
-      transform: rotate(180deg);
-    }
+    @include slider-btn(11px, 18px, .8);
   }
 }

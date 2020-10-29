@@ -112,5 +112,12 @@ body {
 .page-dark {
   position: relative;
 
-  background-color: $color-bg;
+  background-color: $color-tertiary;
+}
+
+
+.page-light {
+  position: relative;
+
+  background-color: $color-primary-light;
 }

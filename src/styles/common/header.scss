@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
 
-  opacity: .8;
+  color: rgba($color-primary-dark, .8);
 
   .header__lang-txt {
     font-size: 1.6rem;
@@ -53,7 +53,7 @@
 
     transition: fill .1s linear;
 
-    opacity: .8;
+    fill: rgba($color-primary-dark, .8);
 
     &:hover {
       fill: lighten($color-primary-dark, 40);
@@ -81,7 +81,7 @@
 
     transition: color .1s linear;
 
-    opacity: .5;
+    color: rgba($color-primary-dark, .5);
 
     &:hover {
       color: lighten($color-primary-dark, 40);
@@ -158,10 +158,10 @@
       letter-spacing: .03em;
       text-transform: uppercase;
 
-      opacity: .75;
+      color: rgba($color-primary-dark, .75);
 
       &:hover {
-        color: lighten($color-primary-dark, 40);
+        color: darken($color-primary-dark, 40);
       }
     }
   }
@@ -176,8 +176,7 @@
 
       transition: fill .1s linear;
 
-      opacity: .75;
-
+      fill: rgba($color-primary-dark, .8);
       fill: $color-primary-dark;
       &:hover {
         fill: lighten($color-primary-dark, 40);

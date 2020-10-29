@@ -1,5 +1,9 @@
 @import 'utils/vars';
 @import 'mixins/media';
+@import 'mixins/section-title';
+@import 'mixins/icon-wrapper';
+@import 'mixins/text';
+@import 'mixins/slider-btn';
 
 @import 'common/global';
 
@@ -9,5 +13,7 @@
 
 @import 'index/intro';
 @import 'index/about';
+@import 'index/activities';
+@import 'index/reviews';
 
 @import 'common/footer';
