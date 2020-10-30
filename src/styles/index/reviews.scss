@@ -1,5 +1,5 @@
 .reviews {
-  padding: 21rem 0;
+  padding: 21rem 0 5rem;
 }
 
 .reviews__title {
@@ -38,7 +38,7 @@
     font-size: 2.6rem;
     font-weight: 700;
 
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.35rem;
 
     letter-spacing: .01em;
 
@@ -51,5 +51,43 @@
     font-size: 1.4rem;
 
     margin-bottom: 2.5rem;
+  }
+}
+
+.reviews__icon {
+  @include slider-btn(11px, 18px, .5);
+}
+
+.swiper-container--reviews {
+  box-shadow: 0 4px 20px rgba($color-primary-dark, .08);
+}
+
+.reviews__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 3rem;
+
+  .swiper-pagination {
+    position: static;
+
+    margin-right: 11rem;
+
+    .swiper-pagination-bullet {
+      margin: 0 .5rem;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $color-secondary-light;
+    }
+  }
+
+  .reviews__controlers {
+    margin-right: 2.5rem;
+  }
+
+  .slider-btn-next--reviews {
+    margin-left: 2.5rem;
   }
 }

@@ -106,7 +106,7 @@
     @include slider-btn(25px, 25px, .5);
   }
 
-  .slider-btn-prev {
+  .slider-btn-prev--activities {
     position: absolute;
     top: 50%;
     left: -40px;
@@ -114,7 +114,7 @@
     transform: translateY(-50%);
   }
 
-  .slider-btn-next {
+  .slider-btn-next--activities {
     position: absolute;
     top: 50%;
     right: -40px;

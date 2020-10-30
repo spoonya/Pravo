@@ -1,0 +1,68 @@
+.special {
+  padding: 8rem 0 5rem;
+}
+
+.special__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.special__item {
+  position: relative;
+
+  width: 100%;
+  max-width: 57rem;
+  margin-bottom: 3rem;
+  padding: 4rem 4.7rem 5.5rem 5rem;
+
+  background-color: $color-primary-light;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+
+  .special__title {
+    @include section-title;
+
+    font-size: 2.6rem;
+
+    margin-bottom: 2.3rem;
+  }
+
+  .special__txt {
+    @include text;
+
+    width: 100%;
+    max-width: 48rem;
+  }
+
+  .special__triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: none;
+
+    max-width: 7rem;
+    max-height: 7rem;
+  }
+
+  &:nth-child(3n+2) {
+    .special__triangle {
+      display: block;
+    }
+  }
+
+  &:nth-child(3n) {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 170rem;
+
+    .special__title {
+      max-width: 32rem;
+    }
+
+    .special__txt {
+      max-width: 72rem;
+    }
+  }
+}

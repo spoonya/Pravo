@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
 
-
+  margin-left: 16rem;
   .header__visual-icon {
     width: 32px;
     height: 22px;
@@ -161,7 +161,7 @@
       color: rgba($color-primary-dark, .75);
 
       &:hover {
-        color: darken($color-primary-dark, 40);
+        color: darken($color-secondary-light, 8);
       }
     }
   }

@@ -15,8 +15,8 @@ mixin slide__intro-item(imgName, title, subtitle)
           h3.intro__subtitle= subtitle
           +link("#", "Подробнее", "link-btn")
         .intro__controllers
-          button.slider-btn-prev: +icon("intro__icon", "slider-arrow")
-          button.slider-btn-next: +icon("intro__icon intro__icon--reverted", "slider-arrow")
+          button.slider-btn-prev--intro: +icon("intro__icon", "slider-arrow")
+          button.slider-btn-next--intro: +icon("intro__icon intro__icon--reverted", "slider-arrow")
 
 mixin slide__activities-item(imgName)
   .swiper-slide: img.activities__img(src=`img/activities/${imgName}`, alt="")
@@ -44,10 +44,24 @@ mixin activities-item(title, icon, href)
     .activities__icon-wrapper: +icon("activities__icon", icon)
 
 mixin slide__reviews-item(img, post, name, txt)
-  .reviews__item
-    img.reviews__img(src=`img/reviews/${img}`, alt="")
-    .reviews__content
-      p.reviews__post= post
-      p.reviews__name= name
-      p.reviews__txt= txt
-      +link("#", "Читать далее", "link-txt")
+  .swiper-slide
+    .reviews__item
+      img.reviews__img(src=`img/reviews/${img}`, alt="")
+      .reviews__content
+        p.reviews__post= post
+        p.reviews__name= name
+        p.reviews__txt= txt
+        +link("#", "Читать далее", "link-txt")
+
+mixin special-item(title, txt)
+  .special__item
+    h3.special__title= title
+    p.special__txt= txt
+    img.special__triangle(src="img/triangle.png", alt="")
+
+mixin services-item(title, href)
+  .services__item
+    .services__block
+    .services__content
+      h3.services__item-title= title
+      +link(href, "Подробнее", "link-txt services__link")
