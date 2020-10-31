@@ -65,3 +65,17 @@ mixin services-item(title, href)
     .services__content
       h3.services__item-title= title
       +link(href, "Подробнее", "link-txt services__link")
+
+mixin trust-profit-block(title, txt, arr)
+  .trust-profit
+    .trust-profit__content
+      h2.trust-profit__title= title
+      p.trust-profit__txt= txt
+    ul.trust-profit__list
+      for item in arr
+        //- li.trust-profit__item= item
+        li.trust-profit__item
+          img.trust-profit__img(src="img/list-circle.png", alt="")
+          p.trust-profit__txt= item
+
+

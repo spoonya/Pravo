@@ -1,0 +1,52 @@
+@mixin list {
+  max-width: 44rem;
+}
+
+@mixin list-item {
+  font-family: $font-secondary;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.76;
+
+  position: relative;
+
+  letter-spacing: .01em;
+
+  color: rgba($color-primary-dark, .75);
+
+  &:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  // &::before {
+  //   position: absolute;
+  //   top: 10px;
+  //   left: -50px;
+
+  //   display: block;
+
+  //   width: 10px;
+  //   height: 10px;
+
+  //   content: '';
+
+  //   border-radius: 50%;
+  //   background-color: $color-secondary-light;
+  // }
+
+  // &::after {
+  //   position: absolute;
+  //   top: -5px;
+  //   left: -65px;
+
+  //   display: block;
+
+  //   width: 40px;
+  //   height: 40px;
+
+  //   content: '';
+
+  //   border: 1px solid $color-secondary-light;
+  //   border-radius: 50%;
+  // }
+}

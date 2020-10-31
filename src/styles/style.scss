@@ -4,10 +4,13 @@
 @import 'mixins/icon-wrapper';
 @import 'mixins/text';
 @import 'mixins/slider-btn';
+@import 'mixins/list';
 
 @import 'common/global';
 
 @import 'common/pug';
+
+@import 'common/form';
 
 @import 'common/header';
 
@@ -19,5 +22,8 @@
 @import 'index/special';
 @import 'index/stub';
 @import 'index/services';
+@import 'index/trust-profit';
+@import 'index/coop';
+@import 'index/price';
 
 @import 'common/footer';

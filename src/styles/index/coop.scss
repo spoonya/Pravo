@@ -1,0 +1,45 @@
+.coop {
+  padding: 5rem 0;
+}
+
+.coop__title {
+  @include section-title;
+}
+
+.coop__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coop__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 50rem;
+}
+
+.coop__item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 3rem;
+
+  .coop__img {
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 3rem;
+  }
+
+  .coop__item-txt {
+    @include text;
+
+    font-weight: 400;
+  }
+}
+
+.coop__txt {
+  @include text;
+
+  font-size: 1.4rem;
+}

@@ -1,5 +1,5 @@
 .services {
-  padding: 4rem 0 4rem;
+  padding: 4rem 0 10rem;
 }
 
 .services__title {
@@ -21,8 +21,14 @@
   min-height: 14rem;
   margin-bottom: 3rem;
 
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+
   background-color: $color-primary-light;
   box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+  &:hover {
+    transform: translateX(5px);
+  }
 
   .services__block {
     width: 7rem;

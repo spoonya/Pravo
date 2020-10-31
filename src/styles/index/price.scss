@@ -1,0 +1,21 @@
+.price {
+  padding: 10rem 0;
+}
+
+.price__title {
+  @include section-title;
+
+  max-width: none;
+  margin-bottom: 3rem;
+}
+
+.price__txt {
+  @include text;
+
+  max-width: 67rem;
+  margin-bottom: 3rem;
+}
+
+.price__link {
+  padding: 1em 5.25em;
+}

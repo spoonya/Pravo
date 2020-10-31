@@ -1,4 +1,5 @@
-.link-btn {
+.link-btn,
+.btn {
   font-size: 1.3rem;
   font-weight: 700;
 
@@ -44,6 +45,24 @@
 
     width: 100%;
     margin: 0 auto;
+
+    .features__item {
+      min-height: 28.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--our {
+    padding: 8rem 0 5rem;
+
+    .features__item {
+      min-height: 33.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .features__section-title {
+    @include section-title;
   }
 
   .features__inner {
@@ -53,11 +72,13 @@
   }
 
   .features__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     min-width: 27rem;
     max-width: 27rem;
     height: 100%;
-    min-height: 28.5rem;
-    margin-bottom: 3rem;
 
     text-align: center;
 
@@ -85,7 +106,35 @@
 
   .features__title {
     font-family: $font-secondary;
+    font-size: 1.6rem;
+    line-height: 1.56;
 
     color: rgba($color-primary-dark, .75);
   }
+}
+
+.features__desc {
+  position: relative;
+
+  width: 100%;
+  padding: 4rem 0 4.5rem 5rem;
+
+  background-color: $color-primary-light;
+  box-shadow: 0 4px 20px rgba($color-primary-dark, .08);
+
+  p {
+    @include text;
+
+    width: 100%;
+    max-width: 75rem;
+  }
+}
+
+.features__triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  max-width: 7rem;
+  max-height: 7rem;
 }

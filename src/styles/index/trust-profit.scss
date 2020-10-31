@@ -1,0 +1,47 @@
+.trust-profit {
+  padding: 9rem 0 10rem;
+}
+
+.trust-profit {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-right: 11rem;
+}
+
+.trust-profit__content {
+  @include text;
+
+  max-width: 47rem;
+  margin-right: 15rem;
+
+  .trust-profit__title {
+    @include section-title;
+
+    margin-bottom: 3rem;
+  }
+}
+
+.trust-profit__list {
+  @include list;
+
+  .trust-profit__item {
+    @include list-item;
+
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .trust-profit__img {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 3rem;
+  }
+}
+
+.trust-profit-profit__delimeter {
+  width: 100%;
+  margin: 6rem 0;
+
+  border: 1px solid rgba($color-primary-dark, .1);
+}

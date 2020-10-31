@@ -22,8 +22,15 @@
   max-width: 37rem;
   margin-bottom: 3rem;
 
+  cursor: pointer;
+  transition: transform .1s linear;
+
   background-color: $color-primary-light;
   box-shadow: 0 4px 10px rgba($color-primary-dark, .05);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .activities__content {
